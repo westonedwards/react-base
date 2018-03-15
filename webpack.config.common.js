@@ -27,7 +27,7 @@ module.exports = {
         ],
     },
     output: {
-        filename: 'bundle.js',
+        filename: 'bundle.min.js',
         path: path.join(__dirname, 'public'),
     },
 };
