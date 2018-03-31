@@ -17,7 +17,7 @@ module.exports = {
             exclude: /node_modules/,
         },
         {
-            test: /\.scss$/,
+            test: /\.s?css$/,
             use: [
             'style-loader',
             'css-loader',
@@ -28,7 +28,7 @@ module.exports = {
             test: /\.(png|jpg|gif)$/,
             use: [
               {
-                loader: 'url-loader',
+                loader: 'file-loader',
                 options: {
                   limit: 8192
                 }
